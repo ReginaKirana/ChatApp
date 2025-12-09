@@ -8,8 +8,8 @@ import ChatScreen from "./screens/ChatScreen";
 import ImageViewScreen from "./screens/ImageViewScreen";
 
 
-import { auth, onAuthStateChanged } from "./firebase";
-import { User } from "firebase/auth";
+import { auth } from "./firebase";
+import { User, onAuthStateChanged } from "firebase/auth";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
