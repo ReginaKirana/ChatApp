@@ -1,23 +1,9 @@
 // firebase.ts
 
 import { initializeApp } from "firebase/app";
-import { 
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-  signOut,
-} from "firebase/auth";
+import { getAuth} from "firebase/auth";
 
-import {
-  getFirestore,
-  collection,
-  addDoc,
-  serverTimestamp,
-  query,
-  orderBy,
-  onSnapshot,
-} from "firebase/firestore";
+import {getFirestore,collection} from "firebase/firestore";
 
 
 const firebaseConfig = {
@@ -38,16 +24,3 @@ export const db = getFirestore(app);
 
 // Messages collection
 export const messagesCollection = collection(db, "messages");
-
-// Export needed functions
-export {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-  signOut,
-  addDoc,
-  serverTimestamp,
-  query,
-  orderBy,
-  onSnapshot,
-};
