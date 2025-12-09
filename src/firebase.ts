@@ -19,7 +19,7 @@ import {
   onSnapshot,
 } from "firebase/firestore";
 
-// 🔥 MASUKKAN CONFIG WEB DI SINI
+
 const firebaseConfig = {
   apiKey: "AIzaSyB1QwWxSHrtHFdZm0ZgWghYRxoix9cvFKc",
   authDomain: "chatapp-dbfe9.firebaseapp.com",
